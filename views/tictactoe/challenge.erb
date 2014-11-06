@@ -1,0 +1,19 @@
+<% if @errors %>
+  <ul>
+    <% @errors.each do |error| %>
+      <%= error %>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= open_form('/tictactoe') %>
+  <select name='user2_id'>
+    <% @challengers.each do |user| %>
+      <option value='<%= user.id %>' ><%= user.username %></option>
+    <% end %>
+  </select>
+  <button type='submit'>Challenge!</button>
+
+
+
+</form>

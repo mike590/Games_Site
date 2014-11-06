@@ -1,0 +1,10 @@
+<h1>Welcome to Hangman Home!</h1>
+
+<ul>
+<% if @current_game %>
+  <li><a href='/hangmane/game'>Resume game</a></li>
+<% else %>
+  <li><a href='/hangman/new'>Start a new game!</a></li>
+<% end %>
+<li><a href='/hangman/history'>See recent games!</a></li>
+</ul>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel='stylesheet' href='/stylesheets/styles.css' />
+  <script src='/javascripts/jquery.js'></script>
+  <script src='/javascripts/scripts.js'></script>
+
+</head>
+<body>
+  
+  <% if @current_user %>
+    <%= erb :_auth_nav %>
+  <% else %>
+    <%= erb :_non_auth_nav %>  
+  <% end %>
+
+  <%= yield %>
+</body>
+</html>

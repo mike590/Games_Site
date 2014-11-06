@@ -1,0 +1,10 @@
+<% if @error %>
+  <h1><%= @error %></h1>
+<% end %>
+
+
+<%= open_form('/sessions') %>
+  <input name='username' placeholder='Username' />
+  <input name='password' type='password' placeholder='Placeholder' />
+  <input type='submit' value='Login' />
+</form>

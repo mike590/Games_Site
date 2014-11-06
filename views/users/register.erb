@@ -1,0 +1,19 @@
+<% if @errors %>
+
+<ul>
+  <% @errors.each do |error| %>
+    <li>
+      <h1><%= error %></h1>
+    </li>
+  <% end %>
+</ul>
+
+<% end %>
+
+
+
+<%= open_form('/users') %>
+  <input name='user[username' placeholder='Username' />
+  <input name='user[password' type='password' placeholder='Password' />
+  <input type='submit' value='Register!' />
+</form>

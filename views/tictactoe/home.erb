@@ -1,0 +1,11 @@
+<h1>Welcome to Tictactoe Home!</h1>
+
+<ul>
+<% if @current_games %>
+  <% @current_games.each do |game| %>
+    <a href='/tictactoe/game/<%= game.id %>'>Game: <%= game.id %></a>
+  <% end %>
+<% end %>
+  <li><a href='/tictactoe/challenge'>Start a new game!</a></li>
+<li><a href='/tictactoe/history'>See recent games!</a></li>
+</ul>
